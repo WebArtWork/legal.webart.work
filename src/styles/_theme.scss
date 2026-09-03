@@ -1,10 +1,10 @@
 /* Design tokens (CSS variables). Runtime-themable; keep SCSS using var(--token) */
 :root {
 	/* brand / actions */
-	--c-primary: #d7d71d;
-	--c-primary-hover: #0051f1;
-	--c-secondary: #c53d3d;
-	--c-secondary-hover: #962a2a;
+	--c-primary: #d9a441;
+	--c-primary-hover: #b8862b;
+	--c-secondary: #1c3470;
+	--c-secondary-hover: #16285a;
 
 	/* surfaces */
 	--c-bg-primary: #f3f4f7;
@@ -55,7 +55,7 @@
 	--motion-slow: 0.4s;
 
 	/* focus */
-	--focus-ring: 0 0 0 3px rgba(215, 215, 29, 0.35);
+	--focus-ring: 0 0 0 3px rgba(217, 164, 65, 0.35);
 }
 
 /* ========= modes ========= */
@@ -77,7 +77,7 @@ html[data-mode='dark'] {
 	--c-placeholder: #d3cdcd;
 
 	/* focus (keeps using primary) */
-	--focus-ring: 0 0 0 3px rgba(227, 227, 72, 0.35);
+	--focus-ring: 0 0 0 3px rgba(226, 166, 66, 0.35);
 }
 
 /* ========= density ========= */

@@ -20,7 +20,27 @@ import { provideNgxSocket } from '@wawjs/ngx-socket';
 import { provideNgxTinymce } from '@wawjs/ngx-tinymce';
 import { provideTranslate } from '@wawjs/ngx-translate';
 import { provideNgxPrime } from '@wawjs/ngx-prime/config';
+import { definePreset } from '@wawjs/css-prime-styled';
 import Aura from '@wawjs/css-prime-themes/aura';
+
+/** Legal brand gold, matched to the logo's scales-of-justice color. */
+const LegalPreset = definePreset(Aura, {
+	semantic: {
+		primary: {
+			50: '#fdf6ea',
+			100: '#f9e8c9',
+			200: '#f2d29c',
+			300: '#eabc6f',
+			400: '#e2a642',
+			500: '#d9a441',
+			600: '#b8862b',
+			700: '#966d24',
+			800: '#78561c',
+			900: '#5c4316',
+			950: '#3a2a0e',
+		},
+	},
+});
 import { NgxBosConfig, ngxBosProvide } from '@wawjs/ngx-bos';
 import { io } from 'socket.io-client';
 import { environment } from '@env';
@@ -73,7 +93,7 @@ export const appConfig: ApplicationConfig = {
 		}),
 		provideNgxPrime({
 			theme: {
-				preset: Aura,
+				preset: LegalPreset,
 				options: { darkModeSelector: "[data-mode='dark']" },
 			},
 		}),

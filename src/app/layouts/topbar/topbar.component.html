@@ -1,5 +1,5 @@
 <nav
-	class="sticky top-0 z-[100] flex min-h-14 items-center bg-[var(--c-bg-secondary)] shadow px-5 max-md:fixed max-md:bottom-0 max-md:top-auto max-md:w-full max-md:px-3"
+	class="sticky top-0 z-[100] flex min-h-14 items-center bg-[var(--c-bg-secondary)] shadow px-5 max-md:fixed max-md:bottom-0 max-md:top-auto max-md:w-full max-md:overflow-x-auto max-md:px-3"
 >
 	<ul
 		class="m-0 flex w-full list-none items-center gap-2 p-0 max-md:justify-between max-md:gap-0"
@@ -19,6 +19,51 @@
 			} @else {
 			<app-nav-icon routerLink="/" icon="home" />
 			}
+		</li>
+
+		<li class="inline-flex items-center max-md:flex-1 max-md:justify-center">
+			<app-nav-icon
+				routerLink="/lawyers"
+				[name]="translateService.translate('Юристи')()"
+				[ariaLabel]="translateService.translate('Юристи')()"
+				icon="id-card"
+			/>
+		</li>
+
+		<li class="inline-flex items-center max-md:flex-1 max-md:justify-center">
+			<app-nav-icon
+				routerLink="/law-firms"
+				[name]="translateService.translate('Юридичні фірми')()"
+				[ariaLabel]="translateService.translate('Юридичні фірми')()"
+				icon="building"
+			/>
+		</li>
+
+		<li class="inline-flex items-center max-md:flex-1 max-md:justify-center">
+			<app-nav-icon
+				routerLink="/notaries"
+				[name]="translateService.translate('Нотаріуси')()"
+				[ariaLabel]="translateService.translate('Нотаріуси')()"
+				icon="verified"
+			/>
+		</li>
+
+		<li class="inline-flex items-center max-md:flex-1 max-md:justify-center">
+			<app-nav-icon
+				routerLink="/services"
+				[name]="translateService.translate('Послуги')()"
+				[ariaLabel]="translateService.translate('Послуги')()"
+				icon="list"
+			/>
+		</li>
+
+		<li class="inline-flex items-center max-md:flex-1 max-md:justify-center">
+			<app-nav-icon
+				routerLink="/feed"
+				[name]="translateService.translate('Стрічка')()"
+				[ariaLabel]="translateService.translate('Стрічка')()"
+				icon="images"
+			/>
 		</li>
 
 		<li class="mx-auto max-md:hidden"></li>

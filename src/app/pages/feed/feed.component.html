@@ -1,0 +1,23 @@
+<div class="page mx-auto max-w-3xl px-5 py-10 max-md:px-3">
+	<header class="mb-8 flex flex-col gap-3">
+		<h1 class="m-0 text-3xl font-semibold text-[var(--c-text-primary)]" translate>
+			Стрічка
+		</h1>
+		<p class="m-0 max-w-2xl text-[var(--c-text-muted)]" translate>
+			Новини та оновлення від юристів, фірм і нотаріусів мережі Legal. Розділ ще наповнюється: публікації з'являться тут найближчим часом.
+		</p>
+	</header>
+
+	<div class="flex flex-col gap-4">
+		@for (item of placeholders; track $index) {
+			<p-card>
+				<div class="flex items-center gap-3 py-2">
+					<i class="pi pi-images text-2xl text-[var(--c-text-muted)]"></i>
+					<span class="text-sm text-[var(--c-text-muted)]" translate
+						>Публікація скоро з'явиться</span
+					>
+				</div>
+			</p-card>
+		}
+	</div>
+</div>

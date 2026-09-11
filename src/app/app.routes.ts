@@ -130,6 +130,76 @@ export const routes: Routes = [
 						(m) => m.routes,
 					),
 			},
+			{
+				path: 'lawyers',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Юристи',
+						description: 'Каталог незалежних юристів Legal — спеціалізація, досвід і відгуки клієнтів.',
+					},
+				},
+				loadChildren: () =>
+					import('./pages/lawyers/lawyers.routes').then(
+						(m) => m.routes,
+					),
+			},
+			{
+				path: 'law-firms',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Юридичні фірми',
+						description: 'Каталог юридичних фірм Legal — команди юристів різних спеціалізацій в одному місці.',
+					},
+				},
+				loadChildren: () =>
+					import('./pages/law-firms/law-firms.routes').then(
+						(m) => m.routes,
+					),
+			},
+			{
+				path: 'notaries',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Нотаріуси',
+						description: 'Каталог нотаріусів Legal — засвідчення документів і нотаріальні дії поруч із вами.',
+					},
+				},
+				loadChildren: () =>
+					import('./pages/notaries/notaries.routes').then(
+						(m) => m.routes,
+					),
+			},
+			{
+				path: 'services',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Юридичні послуги',
+						description: 'Перелік юридичних послуг Legal — від консультацій до супроводу справ і нотаріальних дій.',
+					},
+				},
+				loadChildren: () =>
+					import('./pages/services/services.routes').then(
+						(m) => m.routes,
+					),
+			},
+			{
+				path: 'feed',
+				canActivate: [MetaGuard],
+				data: {
+					meta: {
+						title: 'Стрічка',
+						description: 'Новини та оновлення від юристів, фірм і нотаріусів мережі Legal.',
+					},
+				},
+				loadChildren: () =>
+					import('./pages/feed/feed.routes').then(
+						(m) => m.routes,
+					),
+			},
 		],
 	},
 	{

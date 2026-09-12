@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /$
+Allow: /share$
+Allow: /for-clients$
+Allow: /for-lawyers$
+Allow: /for-law-firms$
+Allow: /for-notaries$
+Allow: /sign$
+Disallow: /profile
+Disallow: /settings
+Disallow: /admin
+
+Sitemap: https://legal.webart.work/sitemap.xml

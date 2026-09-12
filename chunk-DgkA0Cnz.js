@@ -1,0 +1,1 @@
+var t=[{path:``,loadComponent:()=>import(`./chunk-DBX9frlc.js`).then(o=>o.ForLawyersPageComponent)}];export{t as routes};

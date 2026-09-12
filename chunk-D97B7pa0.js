@@ -1,0 +1,1 @@
+var t=[{path:``,loadComponent:()=>import(`./chunk-BqLd0KL3.js`).then(o=>o.ForNotariesPageComponent)}];export{t as routes};

@@ -1,0 +1,1 @@
+var t=[{path:``,loadComponent:()=>import(`./chunk-CaxhNMS52.js`).then(o=>o.ForLawFirmsPageComponent)}];export{t as routes};

@@ -1,0 +1,1 @@
+var t=[{path:``,loadComponent:()=>import(`./chunk-DEa-nIa32.js`).then(o=>o.ProfileComponent)}];export{t as routes};
